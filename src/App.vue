@@ -1,10 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <Doctor />
+    <Paciente />
+  </div>
 </template>
+
+<script>
+import Doctor from './components/Doctor.vue'
+import Paciente from './components/Paciente.vue'
+
+export default {
+  components: {
+    Doctor,
+    Paciente
+  }
+}
+</script>
 
 <style>
 #app {
